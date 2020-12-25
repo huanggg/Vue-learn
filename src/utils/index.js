@@ -12,7 +12,7 @@ import {
     judgmentTime,
     setHWA,
     personalPermissions
-} from '@common/utils/utils.js';
+} from './utils/utils.js';
 setHWA(auroraService);
 Vue.prototype.$https = axios;
 Vue.prototype.$getSeviserUrl = getSeviserUrl;
@@ -23,3 +23,13 @@ Vue.prototype.$endWith = endWith;
 Vue.prototype.$personalPermissions = personalPermissions;
 
 
+
+    getHomePageLinks() {
+      let url = this.$getSeviserUrl(`xxxxx`, 'rac')
+      let params = {
+      }
+      this.$https(url, { params: params }, 'get')
+        .then(res => {
+        
+        })
+    },
