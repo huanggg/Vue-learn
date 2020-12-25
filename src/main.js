@@ -5,7 +5,7 @@ import Aurora from '@aurora/core';
 import store from './store';
 import iHelp from '@aurora/ihelp';
 import router from './router';
-import auroraConfig from '@common/auroraGatewayConfig/aurora';
+import auroraConfig from './auroraGatewayConfig/aurora.js';
 import AuroraService from '@aurora/service';
 import '@aurora/ui/lib/theme-default/index.css';
 import '@aurora/theme/base/index.css';
@@ -13,7 +13,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 import locale from '@aurora/vue-locale';
 import AUI3 from '@aurora/vue'
 require('core-js');
-import '@common/utils/index.js';
+import './utils/index.js';
 import auipulugin from './Auipulugin/index.js';
 Vue.config.productionTip = false;
 Vue.use(VueI18n);
